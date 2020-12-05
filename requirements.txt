@@ -1,0 +1,14 @@
+celery==4.4.7
+Django==2.2.2
+django-cors-headers==3.5.0
+django-filter==2.4.0
+django-redis==4.12.1
+djangorestframework==3.12.2
+djangorestframework-jwt==1.11.0
+Pillow==8.0.1
+PyJWT==1.7.1
+PyMySQL==0.10.1
+python-alipay-sdk==2.1.1
+qcloudsms-py==0.1.4
+redis==3.5.3
+xadmin==2.0.1
