@@ -11,4 +11,4 @@ PyMySQL==0.10.1
 python-alipay-sdk==2.1.1
 qcloudsms-py==0.1.4
 redis==3.5.3
-xadmin==2.0.1
+xadmin==https://codeload.github.com/sshwsfc/xadmin/zip/django2

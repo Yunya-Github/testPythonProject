@@ -27,9 +27,9 @@ sys.path.insert(1,APPS_DIR)
 SECRET_KEY = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["120.26.186.127"]
 
 
 # Application definition
@@ -138,7 +138,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
 LANGUAGE_CODE = "zh-hans"
 TIME_ZONE = "Asia/Shanghai"
 USE_TZ = False
@@ -231,7 +230,7 @@ JWT_AUTH = {
 
 # 上线后必须换成公网地址
 # 后端的基本URL
-BASE_URL = 'http://120.26.186.127:8000'
+BASE_URL = 'http://127.0.0.1:8000'
 # 前端的基本URL
 LUFFY_URL = 'http://120.26.186.127:8080'
 # 支付宝同步异步回调接口配置
@@ -239,3 +238,7 @@ LUFFY_URL = 'http://120.26.186.127:8080'
 NOTIFY_URL = BASE_URL + "/order/success/"
 # 前台同步回调接口，没有 / 结尾
 RETURN_URL = LUFFY_URL + "/pay/success"
+
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/project/luffyapi/luffyapi/static'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
