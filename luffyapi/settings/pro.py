@@ -231,9 +231,9 @@ JWT_AUTH = {
 
 # 上线后必须换成公网地址
 # 后端的基本URL
-BASE_URL = 'http://127.0.0.1:8000'
+BASE_URL = 'http://120.26.186.127:8000'
 # 前端的基本URL
-LUFFY_URL = 'http://127.0.0.1:8080'
+LUFFY_URL = 'http://120.26.186.127:8080'
 # 支付宝同步异步回调接口配置
 # 后台异步回调接口
 NOTIFY_URL = BASE_URL + "/order/success/"
